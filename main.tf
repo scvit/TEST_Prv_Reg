@@ -3,7 +3,7 @@ module "vpc_module" {
   version = "1.0.0"
   # insert required variables here
   vpc_cidr = "10.55.0.0/16"
-  vpc_name = "testvpc-mw"
+  vpc_name = "testvpc-mw-change"
   region = "ap-northeast-2"
   access_key = var.access_key
   secret_key = var.secret_key
