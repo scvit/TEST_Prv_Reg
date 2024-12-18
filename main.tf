@@ -4,11 +4,13 @@ module "vpc_module" {
   # insert required variables here
   vpc_cidr = "10.55.0.0/16"
   vpc_name = "testvpc-mw"
+  region = "ap-northeast-2"
+  access_key = var.access_key
+  secret_key = var.secret_key
   
 }
 
 provider "aws" {
-  region = "ap-northeast-2"
-  access_key = var.access_key
-  secret_key = var.secret_key
+ # region = "ap-northeast-2"
+
   }
